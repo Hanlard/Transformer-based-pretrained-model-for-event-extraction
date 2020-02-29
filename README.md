@@ -65,9 +65,7 @@ PreTrainModel = ['Bert_large', 'Gpt', 'Gpt2', 'Ctrl', 'TransfoXL',
 
 3. 安装依赖环境
 
-4. 训练评估：
-
-python DataLoadAndTrain.py --LOSS_alpha=1 --lr=1e-5 --l2=1e-5 --early_stop=5 --PreTrain_Model="XLMRoberta_large" --batch_size=16
+4. 训练评估：python DataLoadAndTrain.py --LOSS_alpha=1 --lr=1e-5 --l2=1e-5 --early_stop=5 --PreTrain_Model="XLMRoberta_large" --batch_size=16
 
 我的邮箱：491377729@qq.com
 
