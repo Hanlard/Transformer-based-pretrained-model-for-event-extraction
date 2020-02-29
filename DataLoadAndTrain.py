@@ -2,9 +2,7 @@
 2020/2/12:加入了 ALBERT
 """
 
-import os
-import argparse
-import os
+
 import argparse
 import torch
 import torch.nn as nn
@@ -60,7 +58,7 @@ parser.add_argument("--lr", type=float, default=1e-5)
 parser.add_argument("--l2", type=float, default=1e-5)
 parser.add_argument("--n_epochs", type=int, default=50)
 parser.add_argument("--logdir", type=str, default="logdir")
-parser.add_argument("--trainset", type=str, default="data/train_all.json")
+parser.add_argument("--trainset", type=str, default="data/train.json")
 parser.add_argument("--devset", type=str, default="data/dev.json")
 parser.add_argument("--testset", type=str, default="data/test.json")
 parser.add_argument("--LOSS_alpha", type=float, default=1.0)
@@ -70,11 +68,11 @@ parser.add_argument("--PreTrain_Model", type=str, default="Bert_large")
 
 if os.name == "nt":
     parser.add_argument("--model_path", type=str,
-                        default="C:\Hanlard\\NLP\模型\事件抽取\\bert-event-extraction-master\save_model\\latest_model.pt")
+                        default="Transformer-based-pretrained-model-for-event-extraction-master\save_model\\latest_model.pt")
     parser.add_argument("--batch_size", type=int, default=4)
 else:
     parser.add_argument("--model_path", type=str,
-                        default="/content/drive/My Drive/Colab Notebooks/模型/事件抽取/bert-event-extraction-master/save_model/latest_model.pt")
+                        default="Transformer-based-pretrained-model-for-event-extraction-master/save_model/latest_model.pt")
     parser.add_argument("--batch_size", type=int, default=16)
 
 hp = parser.parse_args()

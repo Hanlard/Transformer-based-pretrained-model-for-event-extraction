@@ -55,3 +55,7 @@ PreTrainModel = ['Bert_large', 'Gpt', 'Gpt2', 'Ctrl', 'TransfoXL',
        PreTrain_Model = XLMRoberta_large
            model_path = /Transformer-based-pretrained-model-for-event-extraction-master/save_model/latest_model.pt
            batch_size = 16
+
+
+#### 运行步骤
+python DataLoadAndTrain.py --LOSS_alpha=1 --lr=1e-5 --l2=1e-5 --early_stop=5 --PreTrain_Model="Bert_large" --batch_size=16

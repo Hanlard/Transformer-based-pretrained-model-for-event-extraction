@@ -10,12 +10,11 @@ import torch.nn.functional as F
 import numpy as np
 
 # from pytorch_pretrained_bert import BertModel
-from transformers import BertModel
+# from transformers import BertModel
 
 from consts import NONE,TRIGGERS, event_cls
 from utils import find_triggers, find_argument
 from migration_model.models.CRF import CRF
-import copy
 
 import numpy
 import torch
