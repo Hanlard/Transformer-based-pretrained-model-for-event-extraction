@@ -59,7 +59,7 @@ PreTrainModel = ['Bert_large', 'Gpt', 'Gpt2', 'Ctrl', 'TransfoXL',
 
 #### 运行
 
-1. 去LDC网站获取ACE2005数据集,企业和学校购买后方可获取： https://catalog.ldc.upenn.edu/byyear#2005
+1. 在LDC网站获取ACE2005数据集,企业和学校购买后方可获取： https://catalog.ldc.upenn.edu/byyear#2005
 
 2. 按照 https://github.com/nlpcl-lab/ace2005-preprocessing 的方法对将ACE2005数据处理为json格式
 
