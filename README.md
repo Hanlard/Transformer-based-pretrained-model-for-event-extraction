@@ -1,4 +1,5 @@
 # Transformer-based-pretrained-model-for-event-extraction
+
 使用bert/gpt2/albert/xlm/roberta等预训练语言模型在ace2005上进行事件抽取任务。
 
 代码在nlpcl-lab / bert-event-extraction框架上修改，使用pytorch 的transformer和crf模型替换了原项目的模型构建部分。 
@@ -7,19 +8,21 @@
 
 预训练模型选用xlm-roberta-large时，trigger-f1=0.72; argument-f1=0.45。argument提升了0.05。
 
-[trigger classification]
+#### 说明：当前是按照一个事件类型使用一个CRF进行识别论元，这会造成一定程度的数据稀疏问题，可以在consts.py中修改，将多种事件类型合并为一个CRF识别
+
+#### trigger classification
 
 P=0.677	R=0.754	F1=0.713
 
-[argument classification]	
+#### argument classification
 
 P=0.588	R=0.384	F1=0.464
 
-[trigger identification]	
+#### trigger identification
 
 P=0.723	R=0.805	F1=0.762
 
-[argument identification]	
+#### argument identification
 
 P=0.617	R=0.403	F1=0.488
 
