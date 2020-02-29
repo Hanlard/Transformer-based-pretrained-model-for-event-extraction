@@ -48,7 +48,7 @@ PreTrainModel = ['Bert_large', 'Gpt', 'Gpt2', 'Ctrl', 'TransfoXL',
                    l2 = 1e-05
              n_epochs = 50
                logdir = logdir
-             trainset = data/train_balance.json
+             trainset = data/train.json
                devset = data/dev.json
               testset = data/test.json
            LOSS_alpha = 1.0        
@@ -61,13 +61,13 @@ PreTrainModel = ['Bert_large', 'Gpt', 'Gpt2', 'Ctrl', 'TransfoXL',
 
 1. 在LDC网站获取ACE2005数据集,企业和学校购买后方可获取： https://catalog.ldc.upenn.edu/byyear#2005
 
-2. 按照 https://github.com/nlpcl-lab/ace2005-preprocessing 的方法，将ACE2005数据处理为json格式的train/dev/test后放入\data\文件夹，处理后的格式应该和\data\中sample.json一致
+2. 按照 https://github.com/nlpcl-lab/ace2005-preprocessing 的方法，将ACE2005数据处理为json格式的train/dev/test后放入\\data文件夹，处理后的格式应该和\\data中sample.json一致
 
 3. 安装依赖环境
 
 4. 训练评估：
 
-python DataLoadAndTrain.py --LOSS_alpha=1 --lr=1e-5 --l2=1e-5 --early_stop=5 --PreTrain_Model="Bert_large" --batch_size=16
+python DataLoadAndTrain.py --LOSS_alpha=1 --lr=1e-5 --l2=1e-5 --early_stop=5 --PreTrain_Model="XLMRoberta_large" --batch_size=16
 
 我的邮箱：491377729@qq.com
 
