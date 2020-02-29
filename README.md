@@ -2,7 +2,7 @@
 
 使用BERT/OpenAI-GPT2/ALBERT/XLM/Roberta/XLNet/Ctrl/DistilBert/TransfoXL等预训练语言模型在ace2005数据集上进行事件抽取任务。
 
-代码在nlpcl-lab / bert-event-extraction框架上修改，使用pytorch 的transformer和crf模型替换了原项目的模型构建部分。 
+代码在nlpcl-lab / bert-event-extraction框架上修改，使用transformers包和CRF模型替换了原项目的模型构建部分。 
 
 模型整体采用序列标注的方式，未使用任何辅助信息。 先用crf做触发词识别，再根据触发词识别结果再用crf进行论元识别。
 
