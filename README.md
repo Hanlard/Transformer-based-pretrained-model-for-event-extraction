@@ -10,7 +10,7 @@
 
 #### 说明：当前是按照一个事件类型使用一个CRF进行识别论元，这会造成一定程度的数据稀疏问题，可以在consts.py中修改，将多种事件类型合并为一个CRF识别
 
-#### trigger classification
+#### trigger  classification     
 
 P=0.677	R=0.754	F1=0.713
 
@@ -18,11 +18,11 @@ P=0.677	R=0.754	F1=0.713
 
 P=0.588	R=0.384	F1=0.464
 
-#### trigger identification
+#### trigger  identification  
 
 P=0.723	R=0.805	F1=0.762
 
-#### argument identification
+#### argument identification   
 
 P=0.617	R=0.403	F1=0.488
 
