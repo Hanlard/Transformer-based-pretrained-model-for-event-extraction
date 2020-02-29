@@ -1,6 +1,6 @@
 # Transformer-based-pretrained-model-for-event-extraction
 
-使用bert/gpt2/albert/xlm/roberta等预训练语言模型在ace2005上进行事件抽取任务。
+使用BERT/OpenAI-GPT2/ALBERT/XLM/Roberta/XLNet/Ctrl/DistilBert/TransfoXL等预训练语言模型在ace2005数据集上进行事件抽取任务。
 
 代码在nlpcl-lab / bert-event-extraction框架上修改，使用pytorch 的transformer和crf模型替换了原项目的模型构建部分。 
 
@@ -28,7 +28,7 @@ P=0.617	R=0.403	F1=0.488
 
 超参如下
 
-==================== 超参 ====================
+#### ==================== 超参 ====================
 
 可选预训练模型：
 
@@ -57,5 +57,7 @@ PreTrainModel = ['Bert_large', 'Gpt', 'Gpt2', 'Ctrl', 'TransfoXL',
            batch_size = 16
 
 
-#### 运行步骤
+#### 运行
+训练评估：
+
 python DataLoadAndTrain.py --LOSS_alpha=1 --lr=1e-5 --l2=1e-5 --early_stop=5 --PreTrain_Model="Bert_large" --batch_size=16
